@@ -8,7 +8,8 @@
     "1":{
         "title":"Iter1",
         "icon":"circle-o",
-        "action":"sue.php"
+        "action":"sue.php",
+        "params":{}
     },    
     "100":{
         "title":"Avvio Procedimento",

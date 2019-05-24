@@ -49,13 +49,13 @@ EOT;
         $menu = json_decode($text, true);
         $noList = (!is_array($menuList) || empty($menuList))?(1):(0);
             
-        foreach($menu as $k=>$v){
-            $title = $v["title"];
-            $icon = ($v["icon"])?("fa fa-".$v["icon"]):("fa");
+        foreach($menu as $key1=>$val1){
+            $title = $val1["title"];
+            $icon = ($val1["icon"])?("fa fa-".$val1["icon"]):("fa");
             $params = json_encode(Array());
-            if (!array_key_exists('submenu', $v)){
+            if (!array_key_exists('submenu', $val1)){
                 //echo "<div class='alert alert-info'>".$v["title"]." è senza submenu</div>";
-                if ($noList || in_array($k, $menuList)){
+                if ($noList || in_array($key1, $menuList)){
                     $menuItem=<<<EOT
 <li class="treeview">
     <a href="#" data-plugin="menuItem" data-params="$params">
@@ -68,9 +68,25 @@ EOT;
                 }
             }
             else{
-                $found = array_intersect(array_keys($v["submenu"]), $menuList);
+                $found = array_intersect(array_keys($val1["submenu"]), $menuList);
                 if ($noList || count($found)>0){
-                    $i++;
+                    $title = $val1["title"];
+                    $icon = ($val1["icon"])?("fa fa-".$val1["icon"]):("fa");
+                    $params = json_encode(Array());
+                    $menuItem=<<<EOT
+<li class="treeview">
+    <a href="#" data-plugin="menuItem" data-params="$params">
+        <i class="$icon"></i> <span>$title</span>
+    </a>
+    <span class="pull-right-container">
+        <i class="fa fa-angle-left pull-right"></i>
+    </span>
+EOT;
+                    print $menuItem;
+                    foreach($val1["submenu"] as $key2=>$val2){
+                        
+                    }
+                    print "</li>";
                 }
             }        
             
