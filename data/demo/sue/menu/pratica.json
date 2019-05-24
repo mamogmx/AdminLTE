@@ -1,0 +1,172 @@
+{
+    "0":{
+        "title":"Iter",
+        "icon":"dashboard",
+        "action":"sue.php",
+        "params":{}
+    },
+    "1":{
+        "title":"Iter1",
+        "icon":"circle-o",
+        "action":"sue.php"
+    },    
+    "100":{
+        "title":"Avvio Procedimento",
+        "icon":"",
+        "action":"#",
+        "submenu":{
+            "110":{
+                "title":"Pratica",
+                "icon":"",
+                "action":"",
+                "params":""
+            },
+            "120":{
+                "title":"Soggetti",
+                "icon":"",
+                "action":"#",
+                "params":"",
+                "submenu":[
+                    {
+                        "title":"Richiedenti",
+                        "icon":"",
+                        "action":"",
+                        "params":""
+                    },
+                    {
+                        "title":"Proprietari",
+                        "icon":"",
+                        "action":"",
+                        "params":""
+                    },
+                    {
+                        "title":"Progettisti",
+                        "icon":"",
+                        "action":"",
+                        "params":""
+                    },
+                    {
+                        "title":"Progettisti Strutturali",
+                        "icon":"",
+                        "action":"",
+                        "params":""
+                    },
+                    {
+                        "title":"Direttore Lavori",
+                        "icon":"",
+                        "action":"",
+                        "params":""
+                    },
+                    {
+                        "title":"Direttore Lavori Strutturali",
+                        "icon":"",
+                        "action":"",
+                        "params":""
+                    },
+                    {
+                        "title":"Esecutori",
+                        "icon":"",
+                        "action":"",
+                        "params":""
+                    }
+                ]
+            },
+            "130":{
+                "title":"Ubicazione",
+                "icon":"",
+                "action":"",
+                "params":""
+            }
+                    
+        }
+    },
+    "200":{
+        "title":"Istruttoria Tecnica",
+        "icon":"",
+        "action":"#",
+        "submenu":{
+            "210":{
+                "title":"Pratica",
+                "icon":"",
+                "action":"",
+                "params":""
+            },
+            "220":{
+                "title":"Soggetti",
+                "icon":"",
+                "action":"",
+                "params":""
+            },
+            "230":{
+                "title":"Ubicazione",
+                "icon":"",
+                "action":"",
+                "params":""
+            }
+                    
+        }
+    },
+    "300":{
+        "title":"Istruttoria Amministrativa",
+        "icon":"",
+        "action":"#",
+        "submenu":{
+            "310":{
+                "title":"Pareri Enti Esterni",
+                "icon":"",
+                "action":"",
+                "params":""
+            },
+            "320":{
+                "title":"Pareri Enti Esterni",
+                "icon":"",
+                "action":"",
+                "params":""
+            },
+            "330":{
+                "title":"Pareri Enti Esterni",
+                "icon":"",
+                "action":"",
+                "params":""
+            },
+            "340":{
+                "title":"Pareri Interni",
+                "icon":"",
+                "action":"",
+                "params":""
+            }       
+        }
+    },
+    "900":{
+        "title":"Altro",
+        "icon":"",
+        "action":"#",
+        "submenu":{
+            "310":{
+                "title":"Pareri Enti Esterni",
+                "icon":"",
+                "action":"",
+                "params":""
+            },
+            "320":{
+                "title":"Pareri Enti Esterni",
+                "icon":"",
+                "action":"",
+                "params":""
+            },
+            "330":{
+                "title":"Pareri Enti Esterni",
+                "icon":"",
+                "action":"",
+                "params":""
+            },
+            "340":{
+                "title":"Pareri Interni",
+                "icon":"",
+                "action":"",
+                "params":""
+            }       
+        }
+    }
+    
+}
