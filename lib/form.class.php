@@ -6,3 +6,9 @@
  * and open the template in the editor.
  */
 
+$templateEdit = Array(
+    
+);
+$templateEdit["input"] =<<<EOT
+<input type="text" class="$className" name="$name" id="$id" value="$value" $html5Params/>        
+EOT;

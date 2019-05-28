@@ -1,81 +1,76 @@
 {
-    "0":{
-        "title":"Iter",
-        "icon":"dashboard",
-        "action":"sue.php",
-        "params":{}
-    },
-    "1":{
-        "title":"Iter1",
-        "icon":"circle-o",
-        "action":"sue.php",
-        "params":{}
-    },    
+    
     "100":{
-        "title":"Avvio Procedimento",
-        "icon":"",
+        "title":"Dati Pratica",
+        "icon":"long-arrow-right",
         "action":"#",
         "submenu":{
             "110":{
-                "title":"Pratica",
-                "icon":"",
-                "action":"",
-                "params":""
+                "title":"Avvio Procedimento",
+                "icon":"desktop",
+                "action":"pratica",
+                "params":{}
             },
             "120":{
                 "title":"Soggetti",
-                "icon":"",
+                "icon":"long-arrow-right",
                 "action":"#",
                 "params":"",
                 "submenu":[
                     {
                         "title":"Richiedenti",
-                        "icon":"",
-                        "action":"",
-                        "params":""
+                        "icon":"user",
+                        "action":"soggetti",
+                        "params":{"tipo":"richiedenti"}
                     },
                     {
                         "title":"Proprietari",
-                        "icon":"",
-                        "action":"",
-                        "params":""
+                        "icon":"user",
+                        "action":"soggetti",
+                        "params":{"tipo":"proprietari"}
                     },
                     {
                         "title":"Progettisti",
-                        "icon":"",
-                        "action":"",
-                        "params":""
+                        "icon":"user",
+                        "action":"soggetti",
+                        "params":{"tipo":"progettisti"}
                     },
                     {
                         "title":"Progettisti Strutturali",
-                        "icon":"",
-                        "action":"",
-                        "params":""
+                        "icon":"user",
+                        "action":"soggetti",
+                        "params":{"tipo":"progettisti_ca"}
                     },
                     {
                         "title":"Direttore Lavori",
-                        "icon":"",
-                        "action":"",
-                        "params":""
+                        "icon":"user",
+                        "action":"soggetti",
+                        "params":{"tipo":"direttore"}
                     },
                     {
                         "title":"Direttore Lavori Strutturali",
-                        "icon":"",
-                        "action":"",
-                        "params":""
+                        "icon":"user",
+                        "action":"soggetti",
+                        "params":{"tipo":"direttore_ca"}
                     },
                     {
                         "title":"Esecutori",
-                        "icon":"",
-                        "action":"",
-                        "params":""
+                        "icon":"user",
+                        "action":"soggetti",
+                        "params":{"tipo":"esecutori"}
                     }
                 ]
             },
             "130":{
                 "title":"Ubicazione",
-                "icon":"",
-                "action":"",
+                "icon":"globe",
+                "action":"ubicazione",
+                "params":""
+            },
+            "140":{
+                "title":"Allegati",
+                "icon":"archive",
+                "action":"allegati",
                 "params":""
             }
                     
@@ -83,25 +78,25 @@
     },
     "200":{
         "title":"Istruttoria Tecnica",
-        "icon":"",
+        "icon":"long-arrow-right",
         "action":"#",
         "submenu":{
             "210":{
-                "title":"Pratica",
-                "icon":"",
-                "action":"",
+                "title":"Istruttoria Tecnica",
+                "icon":"building",
+                "action":"istruttoria_tecnica",
                 "params":""
             },
             "220":{
-                "title":"Soggetti",
-                "icon":"",
-                "action":"",
+                "title":"Parametri di Progetto",
+                "icon":"gear",
+                "action":"param_progetto",
                 "params":""
             },
             "230":{
-                "title":"Ubicazione",
+                "title":"Asservimenti",
                 "icon":"",
-                "action":"",
+                "action":"asservimenti",
                 "params":""
             }
                     
@@ -109,65 +104,90 @@
     },
     "300":{
         "title":"Istruttoria Amministrativa",
-        "icon":"",
+        "icon":"long-arrow-right",
         "action":"#",
         "submenu":{
             "310":{
                 "title":"Pareri Enti Esterni",
                 "icon":"",
-                "action":"",
-                "params":""
+                "action":"pareri",
+                "params":{"tipo":"esterno"}
             },
             "320":{
-                "title":"Pareri Enti Esterni",
-                "icon":"",
-                "action":"",
-                "params":""
-            },
-            "330":{
-                "title":"Pareri Enti Esterni",
-                "icon":"",
-                "action":"",
-                "params":""
-            },
-            "340":{
                 "title":"Pareri Interni",
                 "icon":"",
-                "action":"",
+                "action":"pareri",
+                "params":{"tipo":"interno"}
+            },
+            "330":{
+                "title":"Commissione Edilizia",
+                "icon":"",
+                "action":"cedilizia",
                 "params":""
-            }       
+            }   
+        }
+    },
+    "400":{
+        "title":"Ragioneria",
+        "icon":"long-arrow-right",
+        "action":"#",
+        "submenu":{
+            "410":{
+                "title":"Pagamenti",
+                "icon":"eur",
+                "action":"pagamenti",
+                "params":{}
+            },
+            "420":{
+                "title":"Calcolo Oneri",
+                "icon":"",
+                "action":"oneri",
+                "params":{}
+            },
+            "430":{
+                "title":"Rate Oneri",
+                "icon":"",
+                "action":"rate",
+                "params":{}
+            }
         }
     },
     "900":{
         "title":"Altro",
-        "icon":"",
+        "icon":"long-arrow-right",
         "action":"#",
         "submenu":{
-            "310":{
-                "title":"Pareri Enti Esterni",
+            "910":{
+                "title":"Documenti Prodotti",
                 "icon":"",
-                "action":"",
+                "action":"documenti",
                 "params":""
             },
-            "320":{
-                "title":"Pareri Enti Esterni",
+            "920":{
+                "title":"Verifiche",
                 "icon":"",
-                "action":"",
+                "action":"verifiche",
                 "params":""
             },
-            "330":{
-                "title":"Pareri Enti Esterni",
+            "930":{
+                "title":"scadenze",
                 "icon":"",
-                "action":"",
+                "action":"scadenze",
                 "params":""
             },
-            "340":{
-                "title":"Pareri Interni",
+            "940":{
+                "title":"Annotazioni",
                 "icon":"",
-                "action":"",
+                "action":"annotazioni",
                 "params":""
-            }       
+            }
         }
+    },
+    "0":{
+        "title":"Iter",
+        "icon":"dashboard",
+        "action":"iter",
+        "params":{}
     }
     
 }

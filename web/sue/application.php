@@ -1,15 +1,3 @@
-<?php
-$baseDir = dirname(dirname(dirname(__FILE__)));
-require_once $baseDir.DIRECTORY_SEPARATOR."init.php";
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/*echo "<p>".APP_DIR."</p>";
-print_r($css);*/
-?>
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -18,6 +6,23 @@ print_r($css);*/
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 <?php
+
+define('APP','sue');
+$pratica=$_REQUEST["pratica"];
+$form = $_REQUEST["form"];
+
+
+$baseDir = dirname(dirname(dirname(__FILE__)));
+require_once $baseDir.DIRECTORY_SEPARATOR."init.php";
+$filename = APP_DIR."pages".DIRECTORY_SEPARATOR.APP.DIRECTORY_SEPARATOR.$form.".php";
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+/*echo "<p>".APP_DIR."</p>";
+print_r($css);*/
+
     utils::loadCss($css);
 ?>
 
@@ -325,7 +330,8 @@ print_r($css);*/
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <?php
-        utils::loadMenu(DATA_DIR."menu".DIRECTORY_SEPARATOR."pratica.json");
+        $menu = utils::loadMenu(DATA_DIR."menu".DIRECTORY_SEPARATOR."pratica.json",Array(),Array("app"=>APP,"pratica"=>$pratica));
+        print $menu;
         ?>
       </ul>
     </section>
@@ -335,7 +341,15 @@ print_r($css);*/
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    
+    <?php
+    print_r($_REQUEST);
+       if (file_exists($filename)){
+           require_once $filename;
+       }
+       else{
+           print "File $filename non trovato.";
+       }
+    ?>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
