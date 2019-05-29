@@ -35,10 +35,12 @@ $js = Array(
     //Array('','bower_components','moment','min','moment.min.js'),
     Array('','bower_components','bootstrap-daterangepicker','daterangepicker.js'),
     Array('','bower_components','bootstrap-datepicker','dist','js','bootstrap-datepicker.min.js'),
+    Array('','bower_components','bootstrap-datepicker','js','locales','bootstrap-datepicker.it.js'),
     //Array('','plugins','bootstrap-wysihtml5','bootstrap3-wysihtml5.all.min.js'),
     //Array('','bower_components','jquery-slimscroll','jquery.slimscroll.min.js'),
     Array('','dist','js','adminlte.min.js'),
     //Array('','dist','js','pages','dashboard.js'),
-    //Array('.','js','demo.js')
+    //Array('.','js','demo.js')bootstrap-datepicker.it
+    Array('','dist','js','plugins.js'),
 );
 ?>
