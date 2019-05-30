@@ -29,6 +29,12 @@ EOT;
 $templateEdit["textarea"] =<<<EOT
 <label for="$name-id">$label</label>            
 <textarea class="$className" name="$name" id="$name-id" value="$value" $html5Attr>
-    
+    $value
 </textarea>        
 EOT;
+
+class form{
+    function __construct($conf) {
+        
+    }
+}
