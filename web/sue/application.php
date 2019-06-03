@@ -10,7 +10,7 @@
 define('APP','sue');
 $pratica=$_REQUEST["pratica"];
 $form = $_REQUEST["form"];
-
+$mode = $_REQUEST["mode"];
 
 $baseDir = dirname(dirname(dirname(__FILE__)));
 require_once $baseDir.DIRECTORY_SEPARATOR."init.php";

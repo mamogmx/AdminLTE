@@ -1,0 +1,133 @@
+{
+    "dsn":"",
+    "table":"sue.procedimento",
+    "data-source":[
+        {
+            "tipo":"db",
+            "dsn": "",
+            "source":"",
+            "filter":""
+        },
+        {}
+    ],
+    "new":{
+        "table":"sue.procedimento",
+        "sections":[
+            {
+                "title":"Nuovo Procedimento Edilizio",
+                "rows":[
+                    [
+                        {
+                            "label":"Numero Pratica",
+                            "type":"text",
+                            "source":"",
+                            "classes":"",
+                            "witdh":"col-md-3",
+                            "plugins":{},
+                            "attributes":{},
+                            "tooltip":"",
+                            "placeholder":"",
+                            "validation":""
+                        },
+                        {
+                            "label":"Data Presentazione",
+                            "type":"date",
+                            "source":"",
+                            "classes":"",
+                            "witdh":"col-md-3",
+                            "plugins":{},
+                            "attributes":{}
+                        }
+
+                    ],
+                    [
+                        {
+                            "label":"Numero Protocollo",
+                            "type":"text",
+                            "source":"",
+                            "classes":"",
+                            "witdh":"col-md-3",
+                            "plugins":{},
+                            "attributes":{}
+                        },
+                        {
+                            "label":"Data Protocollo",
+                            "type":"",
+                            "source":"",
+                            "classes":"",
+                            "witdh":"col-md-3",
+                            "plugins":{},
+                            "attributes":{}
+                        }
+                    ],
+                    [
+                        {
+                            "label":"Tipo Pratica",
+                            "type":"selection",
+                            "field":"tipo",
+                            "source":"",
+                            "classes":"",
+                            "witdh":"col-md-4",
+                            "plugins":{},
+                            "attributes":{}
+                        },
+                        {
+                            "label":"Riferimento Normativo",
+                            "type":"selection",
+                            "field":"sub_tipo",
+                            "source":"",
+                            "classes":"",
+                            "witdh":"col-md-4",
+                            "plugins":{},
+                            "attributes":{}
+                        }
+                    ],
+                    [
+                        {
+                            "label":"Oggetto",
+                            "type":"textarea",
+                            "field":"oggetto",
+                            "source":"",
+                            "classes":"",
+                            "witdh":"col-md-8",
+                            "plugins":{},
+                            "attributes":{}
+                        }
+                    ],
+                    [
+                        {
+                            "label":"Note",
+                            "type":"textarea",
+                            "field":"note",
+                            "source":"",
+                            "classes":"",
+                            "witdh":"col-m-8",
+                            "plugins":{},
+                            "attributes":{}
+                        }
+                    ]
+                ]
+            }
+        ]
+        
+    },
+    "edit":{
+        "table":"",
+        "title":"Procedimento Edilizio %(numero_pratica)s",
+        "components":{}
+    },
+    "view":{
+        "action":"",
+        "title":"Procedimento Edilizio %(numero_pratica)s",
+        "components":{}
+    },
+    "create":{
+        "action":""
+    },
+    "save":{
+        "action":""
+    },
+    "delete":{
+        "action":""
+    }
+}

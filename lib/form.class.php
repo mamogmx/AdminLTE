@@ -34,7 +34,34 @@ $templateEdit["textarea"] =<<<EOT
 EOT;
 
 class form{
-    function __construct($conf) {
+    var $dsn;
+    var $table;
+    var $mode;
+    var $data;
+    
+    static function getConf($conf,$mode="view") {
+        if (!file_exists($conf)){
+            return -1;
+        }
+        $text = file_get_contents($conf);
+        $data = json_decode($text, true);
+        if (!array_key_exists($mode, $data)){
+            return -5;
+        }
+        $table = $data["table"];
+        $source= $data["data-source"];
+        $dsn=($data[$dsn])?($data["dsn"]):(DSN);
+        $d = $data[$mode];
+        $dsn = ($d["dsn"])?($d["dsn"]):($dsn);
+        $table = ($d["table"])?($data["table"]):($table);
+        for($i=0;$i<count($d["sections"]);$i++){
+            self::getSections($d["sections"][$i]);
+        }
+    }
+    static function getSections(){
+        
+    }
+    static function getRow(){
         
     }
 }

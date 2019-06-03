@@ -1,5 +1,8 @@
 <?php
+$dbh = new PDO(DSN);
+require_once LIB_DIR."form.class.php";
 
+$frm = new form(DATA_DIR."tab".DIRECTORY_SEPARATOR."procedimento.json",$mode);
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates

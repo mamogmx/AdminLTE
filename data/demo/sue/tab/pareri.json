@@ -1,0 +1,26 @@
+{
+    "dsn":"",
+    "new":{
+        "table":"",
+        
+        "components":{}
+    },
+    "edit":{
+        "table":"",
+        "components":{}
+    },
+    "view":{
+        "action":"",
+        "table":"",
+        "components":{}
+    },
+    "create":{
+        "action":""
+    },
+    "save":{
+        "action":""
+    },
+    "delete":{
+        "action":""
+    }
+}

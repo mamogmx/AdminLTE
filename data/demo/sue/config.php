@@ -43,4 +43,6 @@ $js = Array(
     //Array('.','js','demo.js')bootstrap-datepicker.it
     Array('','dist','js','plugins.js'),
 );
+
+define('DSN','pgsql:dbname=lte_dev;user=postgres;password=postgres;host=127.0.0.1;port=5434');
 ?>
